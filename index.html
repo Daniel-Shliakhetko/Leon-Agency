@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="area.size" content="width=X,height=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Leon</title>
+  </head>
+  <body>
+    <div class="container" id="home">
+      <header class="header">
+        <a class="header__image" href="#"><img src="img/Logo.png" alt="" /></a>
+        <button class="header__toggler">
+          <img src="img/Menu.png" alt="" />
+        </button>
+      </header>
+      <aside class="menu side" style="display: none">
+        <button class="menu-close">
+          <img src="img/Close Icon.png" alt="" />
+        </button>
+        <div class="menu-section">
+          <p class="menu-section__heading">Menu</p>
+          <ul class="menu-section__list">
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#home">Home</a>
+            </li>
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#services">Services</a>
+            </li>
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-section">
+          <p class="menu-section__heading">Get in Touch</p>
+          <ul class="menu-section__list">
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-section">
+          <p class="menu-section__heading">Get Social</p>
+          <ul class="menu-section__list">
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#">Behance</a>
+            </li>
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#">Dribble</a>
+            </li>
+            <li class="menu-section__item">
+              <a class="menu-section__link" href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <p class="menu-footer">© leon.com 2019</p>
+      </aside>
+      <main class="content">
+        <section class="home">
+          <div class="intro">
+            <div class="intro__content">
+              <span class="intro__hello title">Hello There!</span>
+              <h1 class="intro__heading">
+                We are Leon - Super Creative & Minimal Agency Web Template
+              </h1>
+            </div>
+          </div>
+          <div class="advantages">
+            <div class="advantage-card">
+              <img
+                class="advantage-card__image"
+                src="img/Composite-Path-2.png"
+                alt=""
+              />
+              <p class="advantage-card__heading">Tell us Your Idea</p>
+              <p class="advantage-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut lab
+              </p>
+            </div>
+            <div class="advantage-card advantage-card_shadow">
+              <img
+                class="advantage-card__image"
+                src="img/Composite-Path.png"
+                alt=""
+              />
+              <p class="advantage-card__heading">We Will Do All The Work</p>
+              <p class="advantage-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut lab
+              </p>
+            </div>
+            <div class="advantage-card">
+              <img
+                class="advantage-card__image"
+                src="img/Composite-Path-1.png"
+                alt=""
+              />
+              <p class="advantage-card__heading">Your Product is Worldwilde</p>
+              <p class="advantage-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut lab
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <div class="section-heading">
+            <h2 class="section-heading__heading">services</h2>
+            <span class="section-heading__moto"
+              >Don't be busy, be productive</span
+            >
+          </div>
+          <div class="services-wrapper wide-block">
+            <div class="services-cards">
+              <div class="service-card">
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="38"
+                  height="37"
+                  viewBox="0 0 38 37"
+                >
+                  <image
+                    id="Icon"
+                    width="38"
+                    height="37"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAADLUlEQVRYhe2Y20sUURyAv93Vdb1ka+lqdKFC6mEUBOliQpBRWA/dYIjqYfC9vyCICqP/oSeZlyLmISoqCFIosqBCREcyI0OzdL2V5m131ThydEdnV3fX9fKw38PuzLn8ft8MM+ecOQ5iQFG1XOAmcAXYGUufCPQAD4Fa09BH7NWLWVFMUTUv8AYoTVBoKS3AcdPQ/9hqLKTZSuzctUj1Ai+AUVur5dkCnAWKZCwR8/pyPWIRuyb/+4AS09AHbS1iQFG1fKAVKASuriTmtJVYUFRNXKlXltQnKiUwDX0AaJCneTJ2VJYVA1yW40CiUhamosS2sZLYhpESi5eUWLykxOJl04otTOKKqrnF5AoUAx5ZnAnck8cfgQe2CPEhpqJDsscNYEIeTwIdwFvT0AMLYoqqnQTqgN1rdgtioxuoMQ39tUNRtXLgHZCxwVLziGmrUqwuauelxkv3MVayn1l3LIuO5OEIhMhu+U5WayfSpVYYVImzoM/LcPWRdRWyEthVQLp/mHT/3Pqxyjl/t4IFXlvj9cbikBEeLhwxLf/XFotDaoCNl5RYvGxasWVHUtffMXIbW8n40Yvr34StPhGmczKZ2lvEyLESprdmR40QVSy9b5j8Rw04p5LxcRRGXKAY4T0dPQxcPkGwMM/WZpGYIzQdLp2dZdvz91apdrm6mLZFiNNLri4OitgiR1/NmYXxyxEMhxdi4kM0393txzkZYMbjxt07RNrgwr7HS+CcaeihVUrNoaiayPkMqBY5RK7Aju1zud0//fPN+l0+pWwPcNgZDJH1pQvX6Diezt+kh8XumIbebMuQIP1tzTM+pUx0viR+nFMh3L8G8NY3WZ/jOmF/GzgNHHCNjJHzqX1pxrFkSUWKmdnetbTuK3DLKfcjKoD7QKR9K4+tZPVEijkiHSpMQx9aNHMrqibOfVL0sSx+Alw0DX02GUYyh4h9XhZdAD4AfmuOiEsKRdWc8k0slkWfZefVvgDi0TkKlMvzb+INNQ19ZmnDiGJSrhJ4BWTZKpPDOHDKNPTGSOGibgX1tzV3+5QyccvFRpt4c8VXVDIQD/5TsZ9rGnpTxIDAf/7W5ERDfxmvAAAAAElFTkSuQmCC"
+                  />
+                </svg>
+                <h3 class="service-card__heading">Graphic Design</h3>
+                <p class="service-card__description">
+                  Graphic design is the process of visual communication and
+                  problem-solving using one or more of typography, photography
+                  and illustration.
+                </p>
+              </div>
+              <div class="service-card">
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="38"
+                  height="37"
+                  viewBox="0 0 38 37"
+                >
+                  <image
+                    id="Icon"
+                    width="38"
+                    height="37"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAACVElEQVRYhe2YS2jUUBRATzKdWkHx2+lYkBbdiCm0uBDcqChUBREUgqBCQHThTpBuVOhGV7oURFQwi3aTpYKigp9FwZWKjTuhKFjtCCq2djqZj9zhzhAbNxnajIscGEIm97133n0feM8AsGxnFXAZOAFspj18AsaBK77nzhqW7awGXgJDbRJazBtgdwcwGpKaAR4AvyLhrZMBqkDtHzVI+2VAknMYyKnLqHw4qUHfgEHfc79EireAZTubgLvAQaAI3AJGfM8tW7ZzBriqIu+As8AlYBLYIE4mkNdmny+VlCLz5RDwCpgGzgMXLdvZB9wGssBj6QPwEJgHnmnZvBmqaC5SdevZkl7vBSZ8z90F7ABKwDHgqIYd9z33AHAdWAfsCTuYkVqXht9AAPRattMDbNcM/dSfMGjZzkpgm77/Na+XRcz3XBmWG0A/INNjAjA0O3dU7pp24IgO94tlF1MuAOd0/njAft9z7/ueOwXsVMGnsm8Bw77nVsOFZR9rLONJ3S76dYknSQWY0lU6gO4jDQYSllnMlvB7WIxaxiToWV9/JolRqZD9+h2jUo2K1bIZCqeGCTauSTZPSrbwg+6xJxhBpf5HMzULffm2SQlB99q6Q4OmWLWrMxKcNGGHZCdTDFKxuKRicUnF4pKKxSUVi0sqFpdULC6pWFyaYkZQbrtM2MHUkzIrPs6QmStGgpNC2hYHZVpOSWNyajbnF8jde0Rxay/Vzo5EpcxSma4PnxEHZfx/vFF8LTc/mcL7t6WcNSRZk2HtA9p1hpM72JvAad9zZ/8AnACgD6PBblIAAAAASUVORK5CYII="
+                  />
+                </svg>
+                <h3 class="service-card__heading">Web Design</h3>
+                <p class="service-card__description">
+                  Web design encompasses many different skills and disciplines
+                  in the production and maintenance of websites.
+                </p>
+              </div>
+            </div>
+            <div class="services-cards">
+              <div class="service-card">
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="39"
+                  height="36"
+                  viewBox="0 0 39 36"
+                >
+                  <image
+                    id="Icon"
+                    width="39"
+                    height="36"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAkCAYAAAAKNyObAAACHklEQVRYhe2YvWsUQRTAf7tZc0ZiI6ckCiKkXDttRAtL/4ElheAGtPEDtBNstLITFT+w0owgqIN2Wp6NdlpYDAh+IBrEixpFD/Nx8SLvmJzDjcFk5XZT7K+afffe7o83w3AzAUCcpOuAU8B+YBvF8Ra4BZw1Wv0M4iQdBB4BOwuU6uYZsDcCTi+KtQYqzIxsplVZ42X3mnC2ydrXHwinZ+VLO8QrslPZFpoc28evwYGiukVfY5pN1x+2RcUrBIZlNLdlY6FignxfPCzDYeeXMPCSC8HxCFeH0d8p5bJSymWllMtKKZeVUi4rpVxWSrmsdOSCuflVIRQ0/3iI3EsZ9E98ovJ+0kvOk8q7uuvwQs4Ql4GLQatF9XaN+Q3rWYj6cheTjkVfG27oishdsqedAxKJpn54hQVwQ+Q6f9jjJD0OXLCPdeDjP5ykvdu7Yl+ACS9zeciR6w1w02j1oN0op+y5M75mtDqz1CvjJK0Cd7rCCjhhtPrmFWQkWmlZnKSyBO4DW23oO3DIaKW95P9kRftcnKRjwBNHzMh67YUYy+1cnKT9wHngiBO+Cxw0WjW8grzk4iSVG4F7wC4bagEngXNGqwWvIC+5OEn3ADJlQzb0GRg1WtW85B6w5JqLk/QYUHPEnsptVF5idHWu7oyPAlXneRw4bLSa8d7QQ1y5V3bjHXLEmnbvupqn1CKdaTVaiciovfqUhf4Y2F2UGMBvC2aNzz2Gx68AAAAASUVORK5CYII="
+                  />
+                </svg>
+                <h3 class="service-card__heading">UI & UX</h3>
+                <p class="service-card__description">
+                  Process of enhancing user satisfaction with a product by
+                  improving the usability, accessibility, and pleasure provided
+                  in the interaction.
+                </p>
+              </div>
+              <div class="service-card">
+                <svg
+                  class="service-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="42"
+                  height="31"
+                  viewBox="0 0 42 31"
+                >
+                  <image
+                    id="Icon"
+                    width="42"
+                    height="31"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAfCAYAAACRdF9FAAABpUlEQVRYhe2YO0vDUBiGn7RRtLgIKoIoVRcxq6CgIOLiHwg4SLO4umv/gO6uLhEnsziJi7goqIhbpIsXnMRFqFJvlcoH59TQaIsSbIY8yznke7/Dk6S5NAaAZTvtwAqwAAwSD66BLWDV99xnw7KdDLAPTMREsJZjYNYE8lqy0mryku2l0toSSv8nxts7bTd3GG9llFteRHNa8j43R7mzo6mSGvPhiZ7NPS2bSwH9Mnvt646NpCAu4qToT1Ur6VQo3HQCTjG0+55ENGoS0ahJRKMmEY2aRDRqEtGo+RKtxNAu4CSiRZm03D9glD9C2WYhLuKkKMob/i4wn34s0bV9QGk0S8VMN10yc3GDOCl25c/dEHAGdIY64oEc1rGU77lXwBRwGkNJcZoSRyO41bKdEWBYfrKhlvqMA8sqsa7GJTWuASd1u8O8A5e+5xZ0xQxGVKEQamuAZTvBwHlN+sT33J36KzQmueFHjfGX9SzbWVQXoGYAmFHzIzVOqvEAuA1kD33P3Qgt2gCzfvlH5GPa9A9FLajRO6DJAr8W/euprz4y/qUX+ASeWmSUQxhQDQAAAABJRU5ErkJggg=="
+                  />
+                </svg>
+                <h3 class="service-card__heading">Web Development</h3>
+                <p class="service-card__description">
+                  Web development is a broad term for the work involved in
+                  developing a web site for the Internet or an intranet.
+                </p>
+              </div>
+            </div>
+            <div class="services-shapes">
+              <div class="black-rectangle"></div>
+              <div class="grey-shadow-square"></div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio darker" id="portfolio">
+          <div class="section-heading">
+            <h2 class="section-heading__heading">portfolio</h2>
+            <span class="section-heading__moto"
+              >If you do it right, it will last forever.</span
+            >
+          </div>
+          <div class="portfolio-cards">
+            <div class="portfolio-card">
+              <div class="portfolio-card__image-wrapper">
+                <img class="portfolio-card__image" src="" alt="" />
+              </div>
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__heading">Project Here</h3>
+                <p class="portfolio-card__description">
+                  My creative ability is very difficult to measure because it
+                  can manifest in so many surprising and.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card__image-wrapper">
+                <img class="portfolio-card__image" src="" alt="" />
+              </div>
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__heading">Project Here</h3>
+                <p class="portfolio-card__description">
+                  My creative ability is very difficult to measure because it
+                  can manifest in so many surprising and.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card__image-wrapper">
+                <img class="portfolio-card__image" src="" alt="" />
+              </div>
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__heading">Project Here</h3>
+                <p class="portfolio-card__description">
+                  My creative ability is very difficult to measure because it
+                  can manifest in so many surprising and.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="section-heading">
+            <h2 class="section-heading__heading">about</h2>
+            <span class="section-heading__moto">Less is more work</span>
+          </div>
+          <div class="about-wrapper wide-block">
+            <div class="about-shapes">
+              <div class="light-rectangle"></div>
+              <div class="green-shape"></div>
+              <div class="grey-shadow-square"></div>
+            </div>
+            <div class="info">
+              <p class="info__main">
+                <b>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliqui
+                </b>
+              </p>
+              <hr class="info__divider" />
+              <p class="info__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliqu
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="contact darker  " id="contact">
+          <div class="section-heading">
+            <h2 class="section-heading__heading">contact</h2>
+            <span class="section-heading__moto">We are born to create</span>
+          </div>
+          <div class="contact__wrapper wide-block">
+            <h3 class="contact__heading">Feel free to drop us a line at:</h3>
+            <span class="contact__email">leonagency@mail.com</span>
+            <div class="social-networks">
+              <h3 class="social-networks__heading">
+                Find us on social networks:
+              </h3>
+              <ul class="social-networks__list">
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="#">
+                    <svg
+                      class="social-networks__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                    >
+                      <image
+                        id="google"
+                        width="22"
+                        height="21"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAC6klEQVQ4jY2VWUhVURSGP7WH5jnKCsEIgybIYwUNNKGHbICOXSIKpKCH8LEZkqCCKKwefC8bLCrZYDSwsWyQHop2REVERRFhWDRRYZfKbizvuno45yodOBzO2mv/e61//WvtHHp4PD8oBNYDi4HpwHD1/Aw8ApqB086a19kQYsCeH4wGDgHrgDzgL3AFeKf/Y4HZelAHcAbY7qxp6xHY84MFQAMwErgIzATygQ3OmrqQXy4wH9gBLAU+AqudNbdiwJ4fLAGuAu1ApbOm0fMDoaEJ+AnMcNa8yJJhQqNOAeXOmmtiz6WbT4n0h0QioGJ31giPR4ABQJ3nB3kRUAnMA/roe0Gx0sBALTAUWOuseRwJqhp4CswBNodAhaJGpUMiXqUYtZ1UeH4gJ94Hzjtr1sTKmwaZB7QA34BSoAKoAvoC+4D9zpoOzw8adK1Ewq/U/TUxxDToKGAg8BwoAu7qUpOq4WHIvUaBKwV4EZAEpnp+MBcYoZIqUKCC2GmQcNY0xKzpQz+I9oXjSZrSMeAosBvYCEwD2tRepf97FaA8lFFXQZ01KW2eIuE4pV0kXH0FvgOtzppkhJIhWrwDKi1R0CBdTmpHvgQmAOOFit/i6Ky5GUssDSgdtgfYBPRTs8jsmchL9w8GxmnrjxGbRCzykgLlayph0BXAceX9jUpJiiVN8MBZ42UJpBX4IhzfAGQ+zIo47NS2lii3CW/OmsPOmuvKY7HnBxMje0q08M0CfELtu0IO1cqlNIbnrKlx1vwKYZzV78pIwFv1ezJHgS4BywBJvT9wTlIFypw1n7KkOwV4IpQ4a0rVVgZY4LKzZnkGuFCBMoVp16HzPlbNbvC3wDBA1DJZKRXpFcuM7pwVOqwTOmzE8VRvoPrcUX+ZFbdVGYnM4I/O44UqIZnHQo+0aIuzRoZ92E8iOwhsUZPMYwHtkuz/3CCy6Z7eIH+06jKUMjdIvUTd6w0SOUB4F3C5AHq68+qdNa9im4F/Dwf+b5Vf0VYAAAAASUVORK5CYII="
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="#">
+                    <svg
+                      class="social-networks__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="22"
+                      height="19"
+                      viewBox="0 0 22 19"
+                    >
+                      <image
+                        id="dribble"
+                        width="22"
+                        height="19"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAATCAYAAACUef2IAAACOElEQVQ4jYWVXYiOQRTHf7urtJEQ63MV+cjWRk0ouVgpk3zVZG9c2JRwsyhFq9yQwo0kmwhbKNkMF5S5oL3cZC4Ie6WozUo+oqyyRCfzbMfzzHr/9faec+bMf87zn3Oepw4FY91c4BCwCZhPHsPArBj81+xqQn1hGOs2AgNAJzACPKtkw0NgRS1SCmJj3WKgF5gI3ANaYvDLgF2l/Csx+JcVlgyKig8Ajcm+GoP/JUYM/jJwQ23bUaXIoyBuUavjSpk3lT2nzGKsO2+s+2SsW16RAnirYutLe98r+02mPDlsCjA5R9yrYh3GutXKX6fscxXaMTDabsa6HiFN7negGxCt9wPjgcMx+NPGuiZAH9wFrASOAs9T7JvWcyfwGNgHLAEOqrXdMfhLyd4OnMnUeVw7o8Qx+N+pym5j3UxgSOX9UPYj4KzyNwMLgNvAYIp9+WfykiRTgUVpGCaksBzaFYM/lcm/C2wF1sbg+4q4nrx2Y10/8BHoV6SkuzhprLtQEWAM1BvrGox1MgS3gFVJ571AG7ANeKC27jHWtZWoRtL/Tx0UjY+kCxFcFNKkd/EkPt38iRTaAvQpDiniGPBCE9cZ694BM5LfHIMfJANjnQzHPOBaDL7maIvG05TfWsn4S9qoJut1JSEDIb6vwj3Gug3GOj04zcB1YBIgr0uRqyZECqn4DrBGZX9O74/pgEya4APQrlvqf2gYejUwPHvhUhnnJ6mtpM1Ec/nJEz0FpM06YvDyIagN4A+qgZJ2CmrQiwAAAABJRU5ErkJggg=="
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="#">
+                    <svg
+                      class="social-networks__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="22"
+                      height="17"
+                      viewBox="0 0 22 17"
+                    >
+                      <image
+                        id="twitter"
+                        width="22"
+                        height="17"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAYAAADZsVyDAAABpUlEQVQ4ja3Uy6uNURjH8c/eKBEZyUCZSJgc9SYG0onBm4n0TgxMlL9AMpfLlBiSmZKBNeBEK7d0Jjq1ysSdktwShYGRW6uztnP2frdzkd/kXetdv/Vdz3paz9OBqm6Wpxi+moOquhnBUezEEjzBWZwpu/fgabdMbld1s3s2bFU3o7iH7F2KHNh6nMR9fMRBPOpUdbMMOdqfOITTKYZfQ6AL8AJrWidO6Rsu4XW3ALPy+BRuVXWzqbWFzbNAldTkQE/0cpyvt2XAdBMXEFMM76u62YVrLVS/HmNjvnFORbdA72JRyzqpD/iMda2Vfo2nGLb3rr8K5/CwZZvSyjlAs970Bt0Uw9uSm5GWbf5Kf8Dle/g/QLOu94FTDJexD59a1rlrIsXwYDBi5S1P4Ps/go9Pn0wHj2MDFra2zK4rKYarQ8Ephi/IJXtnntCXODD4s9OyTRbMNlzE6tZiv/LzGk0xPP8ruKqbxdiKBvtLac6knLq9KYZ3w0y58nKbOzKPd/wKx3B+WLPqi7iU9Y7SS3N5r8WK4smv5Vlpl2O4kWL4MePR+A1G7W14hGXyGAAAAABJRU5ErkJggg=="
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__content">
+          © 2019 - <a href="#">Leon</a>,All Right Reserved
+        </p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
